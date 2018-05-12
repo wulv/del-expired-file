@@ -9,6 +9,9 @@ const chai = require('chai');
 const delExpiredFile = require('../lib');
 
 const expect = chai.expect;
+const filesPath = path.join(__dirname, 'files');
+
+fs.mkdirSync(filesPath);
 
 describe('delete expired 5s log file', () => {
   it('create 1.txt', function() {
@@ -31,7 +34,6 @@ describe('delete file', function() {
     this.timeout(3000);
     setTimeout(done, 2000);
   });
-  const filesPath = path.join(__dirname, 'files');
 
   it('not expired dont delete any file', function() {
     return delExpiredFile({
