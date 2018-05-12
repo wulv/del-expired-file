@@ -11,7 +11,9 @@ const delExpiredFile = require('../lib');
 const expect = chai.expect;
 const filesPath = path.join(__dirname, 'files');
 
-fs.mkdirSync(filesPath);
+if (!fs.existsSync(filesPath)) {
+  fs.mkdirSync(filesPath);
+}
 
 describe('delete expired 5s log file', () => {
   it('create 1.txt', function() {
