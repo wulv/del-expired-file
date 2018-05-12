@@ -1,6 +1,7 @@
 # del-expire-file
 delete expired file。
 
+[![Build Status](https://img.shields.io/travis/wulc/del-expired-file/master.svg)](https://travis-ci.org/wulv/del-expired-file)
 ### Installation
 ```
 npm install del-expired-file --save
