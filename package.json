@@ -9,7 +9,7 @@
     "build:watch": "npm run build -- --watch",
     "test": "npm run build && mocha -t 5000",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha",
-    "coveralls": "coveralls < coverage/lcov.info"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "pre-commit": [
     "lint"

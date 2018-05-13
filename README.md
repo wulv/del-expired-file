@@ -2,6 +2,7 @@
 delete expired file。
 
 [![Build Status](https://travis-ci.org/wulv/del-expired-file.png)](https://travis-ci.org/wulv/del-expired-file)
+[![Coverage Status](https://img.shields.io/coveralls/wulv/del-expired-file/master.svg?style=flat)](https://coveralls.io/github/wulv/del-expired-file?branch=master)
 [![npm version](https://img.shields.io/npm/v/del-expired-file.svg?style=flat)](https://www.npmjs.com/package/del-expired-file)
 [![downloads](https://img.shields.io/npm/dt/del-expired-file.svg)]()
 ### Installation
